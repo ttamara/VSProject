@@ -1,0 +1,3 @@
+[submodule "04-MrSnowman"]
+	path = 04-MrSnowman
+	url = https://gitlab.com/matf-bg-ac-rs/course-rs/projects-2021-2022/04-MrSnowman.git
