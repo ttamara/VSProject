@@ -2,7 +2,7 @@
 
 ## Overview
 
-Tests for the project can be executed using the `run_tests.py` script provided in the `src` directory. This script facilitates the testing process by incorporating additional unit tests, compiling the project with the necessary flags, running the tests, and generating a detailed code coverage report using lcov.
+Tests for the project can be executed using the `run_tests.py` script provided in the `unit_tests` directory. This script facilitates the testing process by incorporating additional unit tests, compiling the project with the necessary flags, running the tests, and generating a detailed code coverage report using lcov.
 
 ## Running the Tests
 

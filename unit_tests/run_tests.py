@@ -34,7 +34,7 @@ def main():
 
     # Generate code coverage report
     subprocess.run(["geninfo", "--output-filename", "coverage.info", "--ignore-errors", "inconsistent,gcov", "."])
-    subprocess.run(["genhtml", "coverage.info", "--ignore-errors", "inconsistent,unmapped", "--output-directory", "../../src/coverage-html"])
+    subprocess.run(["genhtml", "coverage.info", "--ignore-errors", "inconsistent,unmapped", "--output-directory", "../../unit_tests/coverage-html"])
 
     # Remove added unit tests
     subprocess.run(["rm", "MyUnitTest1.cpp"])
