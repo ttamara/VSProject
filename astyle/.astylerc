@@ -1,0 +1,60 @@
+# .astylerc configuration for C++ code
+
+# Brace Style Options
+--style=allman
+
+# Tab Options
+--indent=spaces=4
+
+# Indentation Options
+--indent-classes
+--indent-modifiers
+--indent-switches
+--indent-cases
+--indent-namespaces
+--indent-after-parens
+--indent-continuation=1
+--indent-labels
+--indent-preproc-block
+--indent-preproc-cond
+--indent-preproc-define
+--indent-col1-comments
+--min-conditional-indent=2
+--max-continuation-indent=40
+
+# Padding Options
+--pad-oper
+--pad-comma
+--pad-paren
+--pad-paren-out
+--pad-first-paren-out
+--pad-paren-in
+--pad-empty-paren
+--pad-header
+--unpad-paren
+--pad-brackets
+--pad-brackets-in
+--pad-brackets-out
+--unpad-brackets
+--delete-empty-lines
+--fill-empty-lines
+--squeeze-lines=1
+--squeeze-ws
+--align-pointer=name
+--align-reference=type
+
+# Formatting Options
+--break-closing-braces
+--break-elseifs
+--break-one-line-headers
+--add-braces
+--add-one-line-braces
+--remove-braces
+--break-return-type
+--attach-return-type
+--keep-one-line-blocks
+--keep-one-line-statements
+--convert-tabs
+--close-templates
+--remove-comment-prefix
+--max-code-length=80
