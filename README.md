@@ -1,67 +1,65 @@
-# Analiza Projekta MrSnowman
+# MrSnowman Project Analysis
 
-## Informacije o Autoru
+## Author Information
 
-- **Ime i Prezime:** Tamara Savić
-- **Broj Indeksa:** 1057/2021
+- **Name and Surname:** Tamara Savić
+- **Index Number:** 1057/2021
 
-## Opis Projekta
+## Project Description
 
-MrSnowman je C++ Qt projekat koji predstavlja 2D igru u kojoj pomažete snešku na njegovom opasnom putovanju!
+MrSnowman is a C++ Qt project that represents a 2D game where you help a snowman on his perilous journey!
 
-- **Izvorni Kod Projekta:** [MrSnowman](https://gitlab.com/matf-bg-ac-rs/course-rs/projects-2021-2022/04-MrSnowman)
-- **Analizirana Grana:** master
-- **Hash Commit-a:** f28a6c201c1a70c35364b434ad601bb352846205
+- **Project Source Code:** [MrSnowman](https://gitlab.com/matf-bg-ac-rs/course-rs/projects-2021-2022/04-MrSnowman)
+- **Analyzed Branch:** master
+- **Commit Hash:** f28a6c201c1a70c35364b434ad601bb352846205
 
-## Alati za Analizu
+## Analysis Tools
 
-Za analizu projekta korišćeno je pet alata:
+Five tools were used for the project analysis:
 
 1. **Address Sanitizer (ASan):**
-    - Dinamička analiza
-    - Detekcija memorijskih problema
+    - Dynamic analysis
+    - Detection of memory issues
 
 2. **Astyle:**
-    - Formatiranje koda
+    - Code formatting
 
 3. **Clang Static Analyzer:**
-    - Statička analiza
-    - Detekcija potencijalnih grešaka u kodu
+    - Static analysis
+    - Detection of potential code issues
 
 4. **Thread Sanitizer (TSan):**
-    - Dinamička analiza
-    - Detekcija problema sa nitima
+    - Dynamic analysis
+    - Detection of thread-related issues
 
-5. **Unit Testovi:**
-    - Dinamička analiza
-    - Detekcija grešaka i pokrivenosti koda
+5. **Unit Tests:**
+    - Dynamic analysis
+    - Detection of errors and code coverage
 
-### Uputstva za Reprodukciju Rezultata
+### Instructions for Reproducing Results
 
-Pre pokretanja skripti, inicijalizujte submodul projekta koristeći sledeću komandu:
+Before running the scripts, initialize the project submodule using the following command:
 
 ```bash
 git submodule update --init --recursive --checkout
 ```
 
-Za pokretanje analize, koristite odgovarajuće skripte koje se nalaze u odgovarajućim direktorijumima za svaki alat:
+To run the analysis, use the respective scripts located in the appropriate directories for each tool:
 
-- **Address Sanitizer:** `./run_asan.sh` (nalazi se u direktorijumu za Address Sanitizer)
-- **Astyle:** `./run_astyle.sh` (nalazi se u direktorijumu za Astyle)
-- **Clang Static Analyzer:** `./run_clang.sh` (nalazi se u direktorijumu za Clang Static Analyzer)
-- **Thread Sanitizer:** `./run_tsan.sh` (nalazi se u direktorijumu za Thread Sanitizer)
-- **Unit Testovi:** `./run_tests.py` (nalazi se u direktorijumu za Unit Testove)
+- **Address Sanitizer:** `./run_asan.sh` (located in the Address Sanitizer directory)
+- **Astyle:** `./run_astyle.sh` (located in the Astyle directory)
+- **Clang Static Analyzer:** `./run_clang.sh` (located in the Clang Static Analyzer directory)
+- **Thread Sanitizer:** `./run_tsan.sh` (located in the Thread Sanitizer directory)
+- **Unit Tests:** `./run_tests.py` (located in the Unit Tests directory)
 
+### Conclusions
 
-### Zaključci
+- **Address Sanitizer:** No detected errors or warnings.
+- **Thread Sanitizer:** No detected errors or warnings.
+- **Astyle:** Code formatting applied successfully to specific files.
+- **Clang Static Analyzer:** No errors or warnings found.
+- **Unit Tests:** Code and functionality coverage has been analyzed and is available in the `coverage-html` folder.
 
-- **Address Sanitizer:** Nema detektovanih grešaka ili upozorenja.
-- **Thread Sanitizer:** Nema detektovanih grešaka ili upozorenja.
-- **Astyle:** Formatiranje koda je uspešno primenjeno na određene fajlove.
-- **Clang Static Analyzer:** Nisu pronađene greške ili upozorenja.
-- **Unit Testovi:** Pokrivenost koda i funkcionalnosti je analizirana i dostupna u `coverage-html` folderu.
+### Note
 
-### Napomena
-
-Informacije o korišćenju alata se nalaze u odgovarajućim README.md fajlovima unutar foldera za svaki alat.
-
+Information on tool usage can be found in the respective README.md files within each tool's directory.
