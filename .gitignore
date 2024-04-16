@@ -1,0 +1,6 @@
+**/.qmake.stash
+**/Makefile
+**/*.app/
+04-MrSnowman/
+.DS_Store
+
